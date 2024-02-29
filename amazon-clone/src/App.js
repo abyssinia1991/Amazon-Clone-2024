@@ -1,15 +1,19 @@
 import "./App.css";
+import "./index.css"
 import React from "react";
-import CarouselEffect from "./Components/Carousel/CarouselEffect";
 import Header from "./Components/Header/Header";
+import Carousel from "./Components/Carousel/CarouselEffect";
 import Category from "./Components/Category/Category";
+import Product from "./Components/Product/Product";
 
 function App() {
   return (
     <div>
       <Header />
-      <CarouselEffect />
+      <Carousel />
       <Category />
+      <Product/>
+
     </div>
   );
 }
