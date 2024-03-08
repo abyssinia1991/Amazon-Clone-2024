@@ -12,7 +12,7 @@ const [{basket},dispatch]=useContext(DataContext)
 
 // console.log(basket.length)
   return (
-    <>
+    <section className={classes.fixed}>
       <section>
         <div className={classes.Header_container}>
           {/* log  section   */}
@@ -69,7 +69,7 @@ const [{basket},dispatch]=useContext(DataContext)
         </div>
       </section>
       <LowerHeader />
-    </>
+    </section>
   );
 };
 
