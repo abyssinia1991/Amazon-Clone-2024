@@ -29,7 +29,7 @@ function Product() {
         <section className={classes.Products_container}>
           {Products?.map((singleProduct) => {
             return (
-              <ProductCard Product={singleProduct} key={singleProduct.id} />
+              <ProductCard rendrAdd={ true} Product={singleProduct} key={singleProduct.id} />
             );
           })}
         </section>
