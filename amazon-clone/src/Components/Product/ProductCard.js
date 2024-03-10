@@ -4,7 +4,7 @@ import CurrencyFormat from "../CurrencyFormat/CurrencyFormat";
 import classes from "./Product.module.css";
 import { Link } from "react-router-dom";
 import { DataContext } from "../DataProvider/DataProvider";
-import { type } from "../../Utility/action.type";
+import { Type } from "../../Utility/action.type";
 
 function ProductCard({ Product, flex, renderDesc,rendrAdd}) {
   const { image, title, id, rating, price, description } = Product;
@@ -13,7 +13,7 @@ function ProductCard({ Product, flex, renderDesc,rendrAdd}) {
 
   const addToCart = () => {
     dispatch({
-      type: type.ADD_TO_BASKET,
+      type: Type.ADD_TO_BASKET,
       item: {
         image,
         title,

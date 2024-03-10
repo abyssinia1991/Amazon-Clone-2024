@@ -1,5 +1,4 @@
-
-import { type } from "./action.type";
+import {Type} from "./action.type"
 
 export const initialState = {
     basket:[]
@@ -9,7 +8,7 @@ export const initialState = {
 export const reducer = ( state, action ) => {
     
     switch( action.type ){
-        case type.ADD_TO_BASKET:
+        case Type.ADD_TO_BASKET:
             return {
 
                 ...state,
